@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49AEDC4E8A5A77692C356D30 /* Pods_CityGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF88123AC6308BDEBE14A6CA /* Pods_CityGame.framework */; };
+		7BDF6BA72252B67F005D0D54 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF6BA52252B67F005D0D54 /* Localizable.strings */; };
+		8C7AA082A523B7F0C2A6A5C1 /* MainFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AACD0662AE187DB6EE609 /* MainFlowController.swift */; };
+		8C7AA1B7166FCCB43B753EC8 /* CGFloat+sketchSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA4562845F786A676522B /* CGFloat+sketchSize.swift */; };
+		8C7AA33877B07E6DB7AE0607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7AA45199551694270F7D05 /* LaunchScreen.storyboard */; };
+		8C7AA37DAC857A0A0875105F /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA9DA5562B78F8A0124BF /* FlowController.swift */; };
+		8C7AA3885423C6899E4462EF /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA225B28E0B1F2E570C11 /* UIColorExtension.swift */; };
+		8C7AA4881941CF6AE1E42D39 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAD90516EE19EB8CFF456 /* UserRepository.swift */; };
+		8C7AA4E59C15AC72FFFDA9FC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA04872C97BB858B66FBD /* Colors.swift */; };
+		8C7AA58767ED22E13978BCBF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAD9D218B618BBC83FD2A /* MapView.swift */; };
+		8C7AA6AE12FED1AC5BF29848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7AAB28D4B3D8418B2DDBD7 /* Assets.xcassets */; };
+		8C7AA6CFCBCF0927430184CF /* OnBoardingFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AADF6A2C43DF9707AEC97 /* OnBoardingFlowController.swift */; };
+		8C7AA7450746C75E7814149C /* MapFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAC0E353DA0EB9C8B54C0 /* MapFlowController.swift */; };
+		8C7AA7A2B0857962EE479771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA0EB86A3D9B855185175 /* AppDelegate.swift */; };
+		8C7AAAF37A832647DDBFB7DC /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA91DC9207B655A871D59 /* String+Localizable.swift */; };
+		8C7AAB5D89BDD4B342754D94 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA66CA7DBC1CAE217C958 /* NetworkManager.swift */; };
+		8C7AABCDD09E658D2C80969E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA0D34CEAE7DE026AC2F8 /* MapViewModel.swift */; };
+		8C7AACA8372761F3B57438F2 /* UIView+Snapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA87D3AE48FC5196654EB /* UIView+Snapkit.swift */; };
+		8C7AACD9F2540989A33EE6D6 /* Int+sketchSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAE0467F926AE2AADE31F /* Int+sketchSize.swift */; };
+		8C7AAD69B30BF1C40B33453B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA503C4618B382EC769B5 /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5375B4DF4584E77E7007F4CB /* Pods-CityGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CityGame/Pods-CityGame.debug.xcconfig"; sourceTree = "<group>"; };
+		7BDF6B9E2252B46D005D0D54 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7BDF6BA62252B67F005D0D54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7BDF6BA82252B687005D0D54 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8C7AA04872C97BB858B66FBD /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8C7AA0D34CEAE7DE026AC2F8 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		8C7AA0EB86A3D9B855185175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C7AA225B28E0B1F2E570C11 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		8C7AA40C1A4368E96F0E9684 /* CityGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7AA4562845F786A676522B /* CGFloat+sketchSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+sketchSize.swift"; sourceTree = "<group>"; };
+		8C7AA503C4618B382EC769B5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8C7AA66CA7DBC1CAE217C958 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8C7AA87D3AE48FC5196654EB /* UIView+Snapkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Snapkit.swift"; sourceTree = "<group>"; };
+		8C7AA91DC9207B655A871D59 /* String+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		8C7AA9DA5562B78F8A0124BF /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		8C7AAB28D4B3D8418B2DDBD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C7AAC0E353DA0EB9C8B54C0 /* MapFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapFlowController.swift; sourceTree = "<group>"; };
+		8C7AACD0662AE187DB6EE609 /* MainFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlowController.swift; sourceTree = "<group>"; };
+		8C7AACE86C6C961616213FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		8C7AAD90516EE19EB8CFF456 /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		8C7AAD9D218B618BBC83FD2A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8C7AADF6A2C43DF9707AEC97 /* OnBoardingFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingFlowController.swift; sourceTree = "<group>"; };
+		8C7AAE0467F926AE2AADE31F /* Int+sketchSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+sketchSize.swift"; sourceTree = "<group>"; };
+		8C7AAF2B6DF5557EEA9042DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF88123AC6308BDEBE14A6CA /* Pods_CityGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8CE4BC3B5C553264B9C61A /* Pods-CityGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-CityGame/Pods-CityGame.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C7AA66960B7C4EE9F62C153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49AEDC4E8A5A77692C356D30 /* Pods_CityGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CAE9192DFAD963C765397FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF88123AC6308BDEBE14A6CA /* Pods_CityGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C7AA07B18C9B327CED86A54 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8C7AA66CA7DBC1CAE217C958 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8C7AA1175C78F6B21C491724 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C7AAE0467F926AE2AADE31F /* Int+sketchSize.swift */,
+				8C7AA87D3AE48FC5196654EB /* UIView+Snapkit.swift */,
+				8C7AA225B28E0B1F2E570C11 /* UIColorExtension.swift */,
+				8C7AA4562845F786A676522B /* CGFloat+sketchSize.swift */,
+				8C7AA91DC9207B655A871D59 /* String+Localizable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8C7AA2BD5B5FFF65652A691F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C7AA40C1A4368E96F0E9684 /* CityGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C7AA68E45B14EE6A98C52C9 /* FlowControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C7AA9DA5562B78F8A0124BF /* FlowController.swift */,
+				8C7AAC0E353DA0EB9C8B54C0 /* MapFlowController.swift */,
+				8C7AACD0662AE187DB6EE609 /* MainFlowController.swift */,
+				8C7AADF6A2C43DF9707AEC97 /* OnBoardingFlowController.swift */,
+			);
+			path = FlowControllers;
+			sourceTree = "<group>";
+		};
+		8C7AA82246E4EBD6FA9D23E1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8C7AAD90516EE19EB8CFF456 /* UserRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8C7AAA81D0B586B4A7941C90 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8C7AACFC6DA2A78F5061FF79 = {
+			isa = PBXGroup;
+			children = (
+				8C7AA2BD5B5FFF65652A691F /* Products */,
+				8C7AAD94F1F1852290AD270C /* CityGame */,
+				9D518A304916729FE14D6B78 /* Pods */,
+				7CAE9192DFAD963C765397FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C7AAD94F1F1852290AD270C /* CityGame */ = {
+			isa = PBXGroup;
+			children = (
+				8C7AACE86C6C961616213FF3 /* Info.plist */,
+				8C7AAB28D4B3D8418B2DDBD7 /* Assets.xcassets */,
+				8C7AA45199551694270F7D05 /* LaunchScreen.storyboard */,
+				8C7AA0EB86A3D9B855185175 /* AppDelegate.swift */,
+				8C7AA1175C78F6B21C491724 /* Extensions */,
+				8C7AA68E45B14EE6A98C52C9 /* FlowControllers */,
+				8C7AAA81D0B586B4A7941C90 /* Login */,
+				8C7AA07B18C9B327CED86A54 /* Network */,
+				8C7AA82246E4EBD6FA9D23E1 /* Repositories */,
+				8C7AAFA71C961025975532CB /* Utils */,
+				7BDF6BA52252B67F005D0D54 /* Localizable.strings */,
+				8C7AAFB8760B988A4EA78388 /* Map */,
+			);
+			path = CityGame;
+			sourceTree = "<group>";
+		};
+		8C7AAFA71C961025975532CB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8C7AA04872C97BB858B66FBD /* Colors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8C7AAFB8760B988A4EA78388 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				8C7AAD9D218B618BBC83FD2A /* MapView.swift */,
+				8C7AA0D34CEAE7DE026AC2F8 /* MapViewModel.swift */,
+				8C7AA503C4618B382EC769B5 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		9D518A304916729FE14D6B78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5375B4DF4584E77E7007F4CB /* Pods-CityGame.debug.xcconfig */,
+				CF8CE4BC3B5C553264B9C61A /* Pods-CityGame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C7AA2E1933022EF0E312B34 /* CityGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C7AA58731CEBCEE80FC4B54 /* Build configuration list for PBXNativeTarget "CityGame" */;
+			buildPhases = (
+				F16D4B637667E8A064C5A412 /* [CP] Check Pods Manifest.lock */,
+				8C7AACF0CA2EA5C3F267D76C /* Sources */,
+				8C7AA66960B7C4EE9F62C153 /* Frameworks */,
+				8C7AAA79C24FCFB076411B38 /* Resources */,
+				73AFCA20AFB1606B87558EF0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CityGame;
+			productName = CityGame;
+			productReference = 8C7AA40C1A4368E96F0E9684 /* CityGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C7AAE1DB9FCF0FD4F92F4A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Apolej Developer";
+			};
+			buildConfigurationList = 8C7AAEFB8DCFC4F84D79D02A /* Build configuration list for PBXProject "CityGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				pl,
+				Base,
+			);
+			mainGroup = 8C7AACFC6DA2A78F5061FF79;
+			productRefGroup = 8C7AA2BD5B5FFF65652A691F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C7AA2E1933022EF0E312B34 /* CityGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C7AAA79C24FCFB076411B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7AA6AE12FED1AC5BF29848 /* Assets.xcassets in Resources */,
+				7BDF6BA72252B67F005D0D54 /* Localizable.strings in Resources */,
+				8C7AA33877B07E6DB7AE0607 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73AFCA20AFB1606B87558EF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CityGame/Pods-CityGame-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CityGame/Pods-CityGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F16D4B637667E8A064C5A412 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CityGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C7AACF0CA2EA5C3F267D76C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7AA7A2B0857962EE479771 /* AppDelegate.swift in Sources */,
+				8C7AACD9F2540989A33EE6D6 /* Int+sketchSize.swift in Sources */,
+				8C7AACA8372761F3B57438F2 /* UIView+Snapkit.swift in Sources */,
+				8C7AA3885423C6899E4462EF /* UIColorExtension.swift in Sources */,
+				8C7AA1B7166FCCB43B753EC8 /* CGFloat+sketchSize.swift in Sources */,
+				8C7AAAF37A832647DDBFB7DC /* String+Localizable.swift in Sources */,
+				8C7AA37DAC857A0A0875105F /* FlowController.swift in Sources */,
+				8C7AA7450746C75E7814149C /* MapFlowController.swift in Sources */,
+				8C7AA082A523B7F0C2A6A5C1 /* MainFlowController.swift in Sources */,
+				8C7AA6CFCBCF0927430184CF /* OnBoardingFlowController.swift in Sources */,
+				8C7AAB5D89BDD4B342754D94 /* NetworkManager.swift in Sources */,
+				8C7AA4881941CF6AE1E42D39 /* UserRepository.swift in Sources */,
+				8C7AA4E59C15AC72FFFDA9FC /* Colors.swift in Sources */,
+				8C7AA58767ED22E13978BCBF /* MapView.swift in Sources */,
+				8C7AABCDD09E658D2C80969E /* MapViewModel.swift in Sources */,
+				8C7AAD69B30BF1C40B33453B /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7BDF6BA52252B67F005D0D54 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BDF6BA62252B67F005D0D54 /* Base */,
+				7BDF6BA82252B687005D0D54 /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		8C7AA45199551694270F7D05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C7AAF2B6DF5557EEA9042DD /* Base */,
+				7BDF6B9E2252B46D005D0D54 /* pl */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C7AA10D4FF19A4A8536E59E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C7AA4B23F6E609F7E45AA22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF8CE4BC3B5C553264B9C61A /* Pods-CityGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CityGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apolejDeveloper.CityGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C7AA6CBA5CB8D09BD734AC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5375B4DF4584E77E7007F4CB /* Pods-CityGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CityGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apolejDeveloper.CityGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C7AAE3B77F31E9A891E158E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C7AA58731CEBCEE80FC4B54 /* Build configuration list for PBXNativeTarget "CityGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C7AA6CBA5CB8D09BD734AC8 /* Debug */,
+				8C7AA4B23F6E609F7E45AA22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C7AAEFB8DCFC4F84D79D02A /* Build configuration list for PBXProject "CityGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C7AA10D4FF19A4A8536E59E /* Debug */,
+				8C7AAE3B77F31E9A891E158E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C7AAE1DB9FCF0FD4F92F4A2 /* Project object */;
+}
