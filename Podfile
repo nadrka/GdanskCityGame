@@ -10,4 +10,6 @@ target 'CityGame' do
   pod 'Alamofire'
   pod 'SwiftyBeaver'
   pod 'ObjectMapper'
+  pod 'ChameleonFramework'
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
 end

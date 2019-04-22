@@ -1,28 +1,38 @@
 PODS:
   - Alamofire (4.8.2)
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
   - ObjectMapper (3.4.2)
+  - SkyFloatingLabelTextField (3.6.0)
   - SnapKit (4.0.1)
   - SwiftyBeaver (1.7.0)
 
 DEPENDENCIES:
   - Alamofire
+  - ChameleonFramework
   - ObjectMapper
+  - SkyFloatingLabelTextField (~> 3.0)
   - SnapKit (~> 4.0.0)
   - SwiftyBeaver
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - ChameleonFramework
     - ObjectMapper
+    - SkyFloatingLabelTextField
     - SnapKit
     - SwiftyBeaver
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftyBeaver: 4cc0080d2e23f980652e28978db11a5c9da39165
 
-PODFILE CHECKSUM: f7287279fdba6239377b1cf9991e06d192e96729
+PODFILE CHECKSUM: a7fe8b56fda50969802a143989bb42ba01a1a2dc
 
 COCOAPODS: 1.5.3
