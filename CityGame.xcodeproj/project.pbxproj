@@ -397,17 +397,13 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = "Apolej Developer";
-				TargetAttributes = {
-					8C7AA2E1933022EF0E312B34 = {
-						DevelopmentTeam = L9ADMJK938;
-					};
-				};
 			};
 			buildConfigurationList = 8C7AAEFB8DCFC4F84D79D02A /* Build configuration list for PBXProject "CityGame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				pl,
 				Base,
@@ -651,7 +647,7 @@
 			baseConfigurationReference = CF8CE4BC3B5C553264B9C61A /* Pods-CityGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = L9ADMJK938;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CityGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apolejDeveloper.CityGame;
@@ -666,7 +662,7 @@
 			baseConfigurationReference = 5375B4DF4584E77E7007F4CB /* Pods-CityGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = L9ADMJK938;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CityGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apolejDeveloper.CityGame;
