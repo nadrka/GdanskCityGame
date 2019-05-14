@@ -21,7 +21,7 @@ class RegisterViewController: UIViewController {
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         navigationController?.navigationBar.tintColor = .white;
-        navigationController?.navigationBar.barTintColor = .purple
+        navigationController?.navigationBar.barTintColor = Colors.mainPurple
     }
 
     private func setupView() {

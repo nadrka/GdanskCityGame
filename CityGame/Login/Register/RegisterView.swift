@@ -24,7 +24,7 @@ class RegisterView: UIView {
     }
 
     private func setupLayout() {
-        backgroundColor = .purple
+        backgroundColor = Colors.mainPurple
     }
 
     private func setupView() {

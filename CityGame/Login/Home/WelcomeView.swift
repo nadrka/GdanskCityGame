@@ -37,8 +37,7 @@ class WelcomeView: UIView {
     }
 
     func setupLayout() {
-        backgroundColor = .purple
-        addVerticalGradientLayer(topColor: .purple, bottomColor: .blue)
+        backgroundColor = Colors.mainPurple
     }
 
     private func setupView() {

@@ -1,5 +1,6 @@
 import UIKit
 
 class Colors {
-    static let mainBlue = UIColor(hexString: "#2da7c7")
+    static let mainPurple = UIColor.purple
+    static let lightPurple = UIColor(hexString: "#9B59B6")
 }

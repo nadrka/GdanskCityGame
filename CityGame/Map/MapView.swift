@@ -4,6 +4,7 @@ import SnapKit
 
 class MapView: UIView, CLLocationManagerDelegate {
     private var mapView: MKMapView!
+    private var locationButton: UIImageView!
     private var shouldTrackUserLocation = true
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -18,6 +19,7 @@ class MapView: UIView, CLLocationManagerDelegate {
 
     private func setupMainView() {
         setupMapView()
+        setupLocationButton()
     }
 
     func setupMapView() {
@@ -33,12 +35,32 @@ class MapView: UIView, CLLocationManagerDelegate {
         mapView.addGestureRecognizer(gestureRecognizer)
     }
 
+    private func setupLocationButton() {
+        let image = UIImage(named: "next-location")
+        locationButton = UIImageView(image: image)
+        locationButton.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onLocationButtonTapped))
+        locationButton.addGestureRecognizer(tapGesture)
+        mapView.addSubview(locationButton)
+    }
+
+    @objc func onLocationButtonTapped() {
+        print("location button tappped")
+    }
+
     @objc func didScrollMap() {
 //        self.shouldTrackUserLocation = false
     }
 
     private func applyConstraints() {
         mapView.fillParent()
+
+        locationButton.snp.makeConstraints{
+            make in
+            make.width.height.equalTo(45.sketchHeight)
+            make.right.equalToSuperview().inset(15.sketchWidth)
+            make.top.equalTo(self.snp_topMargin).inset(50.sketchHeight)
+        }
     }
 }
 

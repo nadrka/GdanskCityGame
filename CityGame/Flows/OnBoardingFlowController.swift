@@ -3,7 +3,7 @@ import UIKit
 class OnboardingFlowController: FlowController {
 
     private weak var rootNavigationController: UINavigationController?
-    private var isLoggedIn: Bool = false
+    private var isLoggedIn: Bool = true
     var onUserAlreadyLoggedIn: (()->())? = nil
     var onUserLoggedIn: (()->())? = nil
     var onUserRegistered: (()->())? = nil

@@ -16,7 +16,7 @@ class LoginView: UIView {
     init(viewModel: LoginViewModel) {
         self.viewModel = viewModel
         super.init(frame: .zero)
-        backgroundColor = .purple
+        backgroundColor = Colors.mainPurple
         setupView()
     }
 

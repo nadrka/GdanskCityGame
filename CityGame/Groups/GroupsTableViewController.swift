@@ -5,6 +5,16 @@ class GroupTableViewController: UITableViewController {
     let groups = [Group(name: "Grupa 1"), Group(name: "Grupa 2")]
     let searchController = UISearchController(searchResultsController: nil)
     let cellId = "cellId"
+    var viewModel: GroupsViewModel
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    init(viewModel: GroupsViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
 
     override func loadView() {
         super.loadView()

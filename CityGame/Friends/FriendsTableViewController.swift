@@ -4,6 +4,16 @@ class FriendsTableViewController: UITableViewController {
 
     let friends = [Friend(name: "Gustaw Ohler"), Friend(name: "Łukasz Pawlicki")]
     let searchController = UISearchController(searchResultsController: nil)
+    var viewModel: FriendsViewModel
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    init(viewModel: FriendsViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
 
     override func loadView() {
         super.loadView()
