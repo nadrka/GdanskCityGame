@@ -2,7 +2,6 @@ import UIKit
 
 class FriendsTableViewController: UITableViewController {
 
-    let friends = [Friend(name: "Gustaw Ohler"), Friend(name: "Łukasz Pawlicki")]
     let searchController = UISearchController(searchResultsController: nil)
     var viewModel: FriendsViewModel
 
@@ -14,11 +13,14 @@ class FriendsTableViewController: UITableViewController {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
-
     override func loadView() {
         super.loadView()
         setupTableView()
         setupSearchBar()
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 
     private func setupTableView() {
@@ -35,13 +37,13 @@ class FriendsTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
+        return viewModel.friends.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FriendTableViewCell.reuseId, for: indexPath) as! FriendTableViewCell
-        let friend = friends[indexPath.row]
-        let cellViewModel = FriendCellViewModel(cellUsage: .friendsSharingLocation, friend: friend)
+        let friend = viewModel.friends[indexPath.row]
+        let cellViewModel = DefaultFriendCellViewModel(cellUsage: .friendsToShareLocation, friend: friend)
         cell.setup(cellViewModel)
         return cell
     }

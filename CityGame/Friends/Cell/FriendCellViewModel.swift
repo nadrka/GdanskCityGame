@@ -6,7 +6,18 @@ enum FriendCellUsage {
     case friendsPicker
 }
 
-class FriendCellViewModel {
+protocol FriendCellViewModel {
+    var isDistanceLabelHidden: Bool { get }
+    var isLocationSharingButtonHidden: Bool { get }
+    var isSelected: Bool { get }
+    var isPickerHidden: Bool { get }
+    var initials: String { get }
+    var name: String { get }
+    var distance: String { get }
+    func toggleButton()
+}
+
+class DefaultFriendCellViewModel: FriendCellViewModel {
     private(set) var isSelected: Bool = false
     private(set) var friend: Friend
     private var cellUsage: FriendCellUsage
@@ -18,16 +29,26 @@ class FriendCellViewModel {
 
     var isDistanceLabelHidden: Bool {
         switch cellUsage {
-        case .friendsToShareLocation:
-            return true
-        default:
+        case .friendsSharingLocation:
             return false
+        default:
+            return true
+
         }
     }
 
     var isLocationSharingButtonHidden: Bool {
         switch cellUsage {
         case .friendsToShareLocation:
+            return false
+        default:
+            return true
+        }
+    }
+
+    var isPickerHidden: Bool {
+        switch cellUsage {
+        case .friendsPicker:
             return false
         default:
             return true
@@ -44,7 +65,11 @@ class FriendCellViewModel {
         return initials
     }
 
-    var friendName: String {
+    var name: String {
         return friend.name
+    }
+
+    var distance: String {
+        return "1.7 km"
     }
 }

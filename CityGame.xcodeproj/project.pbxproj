@@ -12,10 +12,13 @@
 		8C7AA012E4647B3CF8D211D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C7AAE690E7E6F9095EC7C68 /* GoogleService-Info.plist */; };
 		8C7AA082A523B7F0C2A6A5C1 /* MainFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AACD0662AE187DB6EE609 /* MainFlowController.swift */; };
 		8C7AA0E32A8931CB4A90CEBA /* PersonDetailsRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA99721E6E933BDB0C93D /* PersonDetailsRegistrationViewModel.swift */; };
+		8C7AA123DBC4661E3660A88A /* CreateGroupButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA414B2FE906C6EA859A5 /* CreateGroupButtonView.swift */; };
 		8C7AA15D1953EF6E9F2E6C6B /* PersonDetailsRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAFDD53CEF9FD143DE306 /* PersonDetailsRegistrationView.swift */; };
 		8C7AA1635CB320BF41FC7418 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAFAD829F4301EC4B8D6D /* FriendsTableViewController.swift */; };
+		8C7AA16BE8AEC12CC5B020EC /* GroupCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA16D3E604737C79736DD /* GroupCellViewModel.swift */; };
 		8C7AA1B7166FCCB43B753EC8 /* CGFloat+sketchSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA4562845F786A676522B /* CGFloat+sketchSize.swift */; };
 		8C7AA2E4BA99CA11A1CB50BD /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA18E544B97FAEB031377 /* DateFormatter.swift */; };
+		8C7AA2FFBA96926C137C4B6A /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAF5E9A69856ECD28318B /* CreateGroupView.swift */; };
 		8C7AA30C59CE1BA44DCDCBE1 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAD1611A6145F09133251 /* FriendTableViewCell.swift */; };
 		8C7AA3258F9F1931635D62D7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA5E6B9DF8E2628B06B45 /* RegisterViewController.swift */; };
 		8C7AA32E0FF45406F8537A26 /* InitialsCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA1C4CDDB30167E82C012 /* InitialsCreator.swift */; };
@@ -59,7 +62,9 @@
 		8C7AACE87FCC55587EDF1E8E /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA5995BBB3031E211B094 /* PasswordViewController.swift */; };
 		8C7AAD5FBF29F5AE5A7F6838 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AADF1093428D06F10143B /* MainTabBarController.swift */; };
 		8C7AAD69B30BF1C40B33453B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA503C4618B382EC769B5 /* MapViewController.swift */; };
+		8C7AAE7C0EAA8985F37B47B2 /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA3D22E49F29EDE92308A /* CreateGroupViewController.swift */; };
 		8C7AAE9D2EA2249FF0AD26B2 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAD3CF3B289EBC61399C4 /* RegisterViewModel.swift */; };
+		8C7AAEA5EABCA85F8FDCB637 /* CreateGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA4270835417C1326EF14 /* CreateGroupViewModel.swift */; };
 		8C7AAEFA92FC801F60F53D12 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA793466E9D1CEB1293EC /* Group.swift */; };
 		8C7AAF7B681A2FE1D6AD26E4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA68B7E72049DCD338EA7 /* LoginView.swift */; };
 		8C7AAFAB84FBD62EC7BA6AEC /* SkyFloating+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA97636BAAB28F52AD47F /* SkyFloating+Color.swift */; };
@@ -74,6 +79,7 @@
 		8C7AA0D34CEAE7DE026AC2F8 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		8C7AA0EB86A3D9B855185175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C7AA1677E2FB18448D60A53 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8C7AA16D3E604737C79736DD /* GroupCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCellViewModel.swift; sourceTree = "<group>"; };
 		8C7AA18E544B97FAEB031377 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		8C7AA1C4CDDB30167E82C012 /* InitialsCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialsCreator.swift; sourceTree = "<group>"; };
 		8C7AA1D31809A3F9602F36D4 /* FriendCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCellViewModel.swift; sourceTree = "<group>"; };
@@ -82,7 +88,10 @@
 		8C7AA2A006C3475024C24112 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
 		8C7AA307D952CC32EE77040C /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8C7AA3481649D8D096C63430 /* PasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
+		8C7AA3D22E49F29EDE92308A /* CreateGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
 		8C7AA40C1A4368E96F0E9684 /* CityGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7AA414B2FE906C6EA859A5 /* CreateGroupButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroupButtonView.swift; sourceTree = "<group>"; };
+		8C7AA4270835417C1326EF14 /* CreateGroupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroupViewModel.swift; sourceTree = "<group>"; };
 		8C7AA4562845F786A676522B /* CGFloat+sketchSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+sketchSize.swift"; sourceTree = "<group>"; };
 		8C7AA503C4618B382EC769B5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8C7AA5995BBB3031E211B094 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +133,7 @@
 		8C7AAEA0CF3098B0DD412F0C /* FriendsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
 		8C7AAEE27F4187229120D574 /* GameCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCollectionViewCell.swift; sourceTree = "<group>"; };
 		8C7AAF2B6DF5557EEA9042DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C7AAF5E9A69856ECD28318B /* CreateGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
 		8C7AAFAD829F4301EC4B8D6D /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		8C7AAFDD53CEF9FD143DE306 /* PersonDetailsRegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsRegistrationView.swift; sourceTree = "<group>"; };
 		AF88123AC6308BDEBE14A6CA /* Pods_CityGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CityGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +236,8 @@
 				8C7AA2A006C3475024C24112 /* GroupsTableViewController.swift */,
 				8C7AA99BC025F21067A3104E /* GroupsViewModel.swift */,
 				8C7AA793466E9D1CEB1293EC /* Group.swift */,
+				8C7AAAACDEED8DBA25504971 /* Create */,
+				8C7AA16D3E604737C79736DD /* GroupCellViewModel.swift */,
 			);
 			path = Groups;
 			sourceTree = "<group>";
@@ -281,6 +293,17 @@
 				8C7AA9FAD0746C175248E9E6 /* Home */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		8C7AAAACDEED8DBA25504971 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				8C7AA414B2FE906C6EA859A5 /* CreateGroupButtonView.swift */,
+				8C7AAF5E9A69856ECD28318B /* CreateGroupView.swift */,
+				8C7AA4270835417C1326EF14 /* CreateGroupViewModel.swift */,
+				8C7AA3D22E49F29EDE92308A /* CreateGroupViewController.swift */,
+			);
+			path = Create;
 			sourceTree = "<group>";
 		};
 		8C7AAAD3AA3571FCF190A599 /* Registration */ = {
@@ -557,6 +580,11 @@
 				8C7AA5B91B3D4C011E83C343 /* GameViewController.swift in Sources */,
 				8C7AA525713CFDE1DB92A552 /* GameViewModel.swift in Sources */,
 				8C7AA64F893222FD08EDD611 /* GameCollectionViewCell.swift in Sources */,
+				8C7AA123DBC4661E3660A88A /* CreateGroupButtonView.swift in Sources */,
+				8C7AA2FFBA96926C137C4B6A /* CreateGroupView.swift in Sources */,
+				8C7AAEA5EABCA85F8FDCB637 /* CreateGroupViewModel.swift in Sources */,
+				8C7AAE7C0EAA8985F37B47B2 /* CreateGroupViewController.swift in Sources */,
+				8C7AA16BE8AEC12CC5B020EC /* GroupCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
