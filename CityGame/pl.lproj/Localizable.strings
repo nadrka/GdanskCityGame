@@ -14,3 +14,5 @@
 "PASSWORD" = "Password";
 "REPEAT_PASSWORD" = "Repeat Password";
 "CHOOSE_CITY_GAME" = "Choose a city game to play";
+"DETAILS" = "Details";
+"TASK" = "Task";

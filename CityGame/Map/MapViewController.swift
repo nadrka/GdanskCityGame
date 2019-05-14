@@ -15,7 +15,7 @@ class MapViewController: UIViewController {
     }
 
     private func setupView() {
-        mainView = MapView()
+        mainView = MapView(viewModel: viewModel)
         view.addSubview(mainView)
         mainView.fillParent()
     }

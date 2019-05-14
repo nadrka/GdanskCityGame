@@ -32,6 +32,7 @@
 		8C7AA3CC9420A5401FF6EE20 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA61A4A5C9B28E76F75A1 /* GameView.swift */; };
 		8C7AA3F78FD41FB8F52DBF69 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAB698AE1162BE33532D1 /* WelcomeView.swift */; };
 		8C7AA42B3FE7A013F73EAE27 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA767EB58555E7CA614F3 /* RegisterView.swift */; };
+		8C7AA45C9EC7E099592D1E84 /* Monument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA0BA8161F18C2095BC0D /* Monument.swift */; };
 		8C7AA4881941CF6AE1E42D39 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAD90516EE19EB8CFF456 /* UserRepository.swift */; };
 		8C7AA4A2194E34FE02344DAF /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA72D76398A8ED180C7AA /* RoundedButton.swift */; };
 		8C7AA4D659906002813C5207 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAC12ECC8E6369A56F06B /* WelcomeViewModel.swift */; };
@@ -45,11 +46,13 @@
 		8C7AA66E27556E1548EE172A /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA98C8AC6FD9D3E68C0C3 /* PasswordView.swift */; };
 		8C7AA6AE12FED1AC5BF29848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7AAB28D4B3D8418B2DDBD7 /* Assets.xcassets */; };
 		8C7AA6CFCBCF0927430184CF /* OnBoardingFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AADF6A2C43DF9707AEC97 /* OnBoardingFlowController.swift */; };
+		8C7AA70DE7A029BA5708DE88 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAC65942DE810EEE993A1 /* Game.swift */; };
 		8C7AA7450746C75E7814149C /* MapFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAC0E353DA0EB9C8B54C0 /* MapFlowController.swift */; };
 		8C7AA7758438165B5EE7126A /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA3481649D8D096C63430 /* PasswordViewModel.swift */; };
 		8C7AA7A2B0857962EE479771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA0EB86A3D9B855185175 /* AppDelegate.swift */; };
 		8C7AA7DBD9A2CAD2CAC7F4ED /* PersonDetailsRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA292CC396860CCE31939 /* PersonDetailsRegistrationViewController.swift */; };
 		8C7AA9724271A58FA150BD94 /* FriendCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA1D31809A3F9602F36D4 /* FriendCellViewModel.swift */; };
+		8C7AA9DF8A1934DE5176B290 /* MonumentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA7006BF7D6C9AF002FD2 /* MonumentDetailsView.swift */; };
 		8C7AAA538714735C26CC4723 /* InitialCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAD582DD70EB64FBCEA4D /* InitialCircleView.swift */; };
 		8C7AAAF37A832647DDBFB7DC /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA91DC9207B655A871D59 /* String+Localizable.swift */; };
 		8C7AAB1BBB339F68A6CDC0E5 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAD0E20195396BB666E81 /* Friend.swift */; };
@@ -58,10 +61,12 @@
 		8C7AAC044AC4593242DD2026 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA6DF35D00767864027B6 /* LoginViewController.swift */; };
 		8C7AAC50741CACF4C9FF0C2B /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAEA0CF3098B0DD412F0C /* FriendsViewModel.swift */; };
 		8C7AACA8372761F3B57438F2 /* UIView+Snapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA87D3AE48FC5196654EB /* UIView+Snapkit.swift */; };
+		8C7AACC4EA926D6DB8E01838 /* MonumentPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA3D2380F84E28D5B9040 /* MonumentPin.swift */; };
 		8C7AACD9F2540989A33EE6D6 /* Int+sketchSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAE0467F926AE2AADE31F /* Int+sketchSize.swift */; };
 		8C7AACE87FCC55587EDF1E8E /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA5995BBB3031E211B094 /* PasswordViewController.swift */; };
 		8C7AAD5FBF29F5AE5A7F6838 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AADF1093428D06F10143B /* MainTabBarController.swift */; };
 		8C7AAD69B30BF1C40B33453B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA503C4618B382EC769B5 /* MapViewController.swift */; };
+		8C7AADE98DF10697F5E2B5A6 /* MonumentAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA46F539B2CD402815E15 /* MonumentAnnotationView.swift */; };
 		8C7AAE7C0EAA8985F37B47B2 /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA3D22E49F29EDE92308A /* CreateGroupViewController.swift */; };
 		8C7AAE9D2EA2249FF0AD26B2 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAD3CF3B289EBC61399C4 /* RegisterViewModel.swift */; };
 		8C7AAEA5EABCA85F8FDCB637 /* CreateGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA4270835417C1326EF14 /* CreateGroupViewModel.swift */; };
@@ -76,6 +81,7 @@
 		7BDF6BA62252B67F005D0D54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7BDF6BA82252B687005D0D54 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8C7AA04872C97BB858B66FBD /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8C7AA0BA8161F18C2095BC0D /* Monument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monument.swift; sourceTree = "<group>"; };
 		8C7AA0D34CEAE7DE026AC2F8 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		8C7AA0EB86A3D9B855185175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C7AA1677E2FB18448D60A53 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -89,10 +95,12 @@
 		8C7AA307D952CC32EE77040C /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8C7AA3481649D8D096C63430 /* PasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
 		8C7AA3D22E49F29EDE92308A /* CreateGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
+		8C7AA3D2380F84E28D5B9040 /* MonumentPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonumentPin.swift; sourceTree = "<group>"; };
 		8C7AA40C1A4368E96F0E9684 /* CityGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7AA414B2FE906C6EA859A5 /* CreateGroupButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroupButtonView.swift; sourceTree = "<group>"; };
 		8C7AA4270835417C1326EF14 /* CreateGroupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroupViewModel.swift; sourceTree = "<group>"; };
 		8C7AA4562845F786A676522B /* CGFloat+sketchSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+sketchSize.swift"; sourceTree = "<group>"; };
+		8C7AA46F539B2CD402815E15 /* MonumentAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonumentAnnotationView.swift; sourceTree = "<group>"; };
 		8C7AA503C4618B382EC769B5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8C7AA5995BBB3031E211B094 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		8C7AA5E6B9DF8E2628B06B45 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +108,7 @@
 		8C7AA66CA7DBC1CAE217C958 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8C7AA68B7E72049DCD338EA7 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8C7AA6DF35D00767864027B6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8C7AA7006BF7D6C9AF002FD2 /* MonumentDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonumentDetailsView.swift; sourceTree = "<group>"; };
 		8C7AA72D76398A8ED180C7AA /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		8C7AA767EB58555E7CA614F3 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		8C7AA793466E9D1CEB1293EC /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
@@ -118,6 +127,7 @@
 		8C7AAB698AE1162BE33532D1 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		8C7AAC0E353DA0EB9C8B54C0 /* MapFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapFlowController.swift; sourceTree = "<group>"; };
 		8C7AAC12ECC8E6369A56F06B /* WelcomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		8C7AAC65942DE810EEE993A1 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		8C7AACD0662AE187DB6EE609 /* MainFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlowController.swift; sourceTree = "<group>"; };
 		8C7AACE86C6C961616213FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		8C7AAD0E20195396BB666E81 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
@@ -269,8 +279,20 @@
 				8C7AAB63E71E643D73D881AA /* GameViewController.swift */,
 				8C7AAA635B38D463FD275124 /* GameViewModel.swift */,
 				8C7AAEE27F4187229120D574 /* GameCollectionViewCell.swift */,
+				8C7AAC65942DE810EEE993A1 /* Game.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		8C7AA9F5D419BFC5F96AFD66 /* Monument */ = {
+			isa = PBXGroup;
+			children = (
+				8C7AA0BA8161F18C2095BC0D /* Monument.swift */,
+				8C7AA46F539B2CD402815E15 /* MonumentAnnotationView.swift */,
+				8C7AA3D2380F84E28D5B9040 /* MonumentPin.swift */,
+				8C7AA7006BF7D6C9AF002FD2 /* MonumentDetailsView.swift */,
+			);
+			path = Monument;
 			sourceTree = "<group>";
 		};
 		8C7AA9FAD0746C175248E9E6 /* Home */ = {
@@ -378,6 +400,7 @@
 				8C7AAD9D218B618BBC83FD2A /* MapView.swift */,
 				8C7AA0D34CEAE7DE026AC2F8 /* MapViewModel.swift */,
 				8C7AA503C4618B382EC769B5 /* MapViewController.swift */,
+				8C7AA9F5D419BFC5F96AFD66 /* Monument */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -581,6 +604,11 @@
 				8C7AAEA5EABCA85F8FDCB637 /* CreateGroupViewModel.swift in Sources */,
 				8C7AAE7C0EAA8985F37B47B2 /* CreateGroupViewController.swift in Sources */,
 				8C7AA16BE8AEC12CC5B020EC /* GroupCellViewModel.swift in Sources */,
+				8C7AA70DE7A029BA5708DE88 /* Game.swift in Sources */,
+				8C7AA45C9EC7E099592D1E84 /* Monument.swift in Sources */,
+				8C7AADE98DF10697F5E2B5A6 /* MonumentAnnotationView.swift in Sources */,
+				8C7AACC4EA926D6DB8E01838 /* MonumentPin.swift in Sources */,
+				8C7AA9DF8A1934DE5176B290 /* MonumentDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

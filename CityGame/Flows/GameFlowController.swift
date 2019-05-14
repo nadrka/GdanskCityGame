@@ -17,7 +17,7 @@ class GameFlowController: FlowController {
     }
 
     private func showMapScreen() {
-        let mapViewModel = MapViewModel()
+        let mapViewModel = MapViewModel(gameId: 1)
         let mapViewController = MapViewController(viewModel: mapViewModel)
         gameNavigationController?.pushViewController(mapViewController, animated: true)
     }
