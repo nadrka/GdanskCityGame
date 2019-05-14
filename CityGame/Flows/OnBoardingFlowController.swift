@@ -27,6 +27,11 @@ class OnboardingFlowController: FlowController {
             [weak self] in
             self?.showRegistrationScreen()
         }
+
+        welcomeViewModel.onSignInButtonTapped = {
+            [weak self] in
+            self?.showLoginScreen()
+        }
         let welcomeViewController = WelcomeViewController(viewModel: welcomeViewModel)
         rootNavigationController?.setNavigationBarHidden(true, animated: true)
         rootNavigationController?.viewControllers = [welcomeViewController]
@@ -40,5 +45,15 @@ class OnboardingFlowController: FlowController {
         let registrationViewController = RegisterViewController(viewModel: registrationViewModel)
         rootNavigationController?.setNavigationBarHidden(false, animated: true)
         rootNavigationController?.pushViewController(registrationViewController, animated: true)
+    }
+
+    private func showLoginScreen() {
+        let loginViewModel = LoginViewModel()
+        loginViewModel.onLoginButtonTapped = {
+            self.onUserLoggedIn?()
+        }
+        let loginViewController = LoginViewController(viewModel: loginViewModel)
+        rootNavigationController?.setNavigationBarHidden(false, animated: true)
+        rootNavigationController?.pushViewController(loginViewController, animated: true)
     }
 }

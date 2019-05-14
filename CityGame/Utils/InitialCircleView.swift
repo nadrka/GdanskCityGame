@@ -37,7 +37,9 @@ class InitialCircleView: UIView {
 
     private func setupInitialLabel() {
         initialLabel.font = UIFont.systemFont(ofSize: fontSize)
-        initialLabel.text = InitialCreator.getInitials(from: name)
+        let initials = InitialCreator.getInitials(from: name)
+        initialLabel.text = initials
+        initialLabel.textColor = .white
         addSubview(initialLabel)
     }
 

@@ -2,9 +2,8 @@ import UIKit
 
 class FriendsTableViewController: UITableViewController {
 
-    let friends = [Friend(name: "Gucio"), Friend(name: "Karol")]
+    let friends = [Friend(name: "Gustaw Ohler"), Friend(name: "Łukasz Pawlicki")]
     let searchController = UISearchController(searchResultsController: nil)
-    let cellId = "cellId"
 
     override func loadView() {
         super.loadView()
@@ -13,9 +12,10 @@ class FriendsTableViewController: UITableViewController {
     }
 
     private func setupTableView() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(FriendTableViewCell.self, forCellReuseIdentifier: FriendTableViewCell.reuseId)
         tableView.tableFooterView = UIView()
         tableView.allowsSelection = false
+//        tableView.separatorStyle = .none
     }
 
     private func setupSearchBar() {
@@ -29,9 +29,10 @@ class FriendsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: FriendTableViewCell.reuseId, for: indexPath) as! FriendTableViewCell
         let friend = friends[indexPath.row]
-        cell.textLabel?.text = friend.name
+        let cellViewModel = FriendCellViewModel(cellUsage: .friendsSharingLocation, friend: friend)
+        cell.setup(cellViewModel)
         return cell
     }
 }

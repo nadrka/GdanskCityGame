@@ -26,7 +26,7 @@ class RoundedButton: UIButton {
         backgroundColor = color
         setTitle(buttonTitle, for: .normal)
         setTitleColor(titleColor, for: .normal)
-        if hasBorder {
+        if frameColor != nil {
             setupBorder()
         }
     }

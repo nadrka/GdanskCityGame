@@ -12,4 +12,7 @@ target 'CityGame' do
   pod 'ObjectMapper'
   pod 'ChameleonFramework'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'StatusAlert'
 end

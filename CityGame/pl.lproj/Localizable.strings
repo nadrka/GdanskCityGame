@@ -5,3 +5,11 @@
   Created by karol.nadratowaski on 01/04/2019.
   Copyright © 2019 Apolej Developer. All rights reserved.
 */
+
+"CITY_GAME" = "City Game";
+"SIGN_IN" = "Login";
+"SIGN_UP" = "Sign Up";
+"EMAIL" = "Email";
+"NAME" = "Name";
+"PASSWORD" = "Password";
+"REPEAT_PASSWORD" = "Repeat Password";
