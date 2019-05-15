@@ -3,7 +3,6 @@ import SnapKit
 
 class GameView: UIView, UICollectionViewDelegateFlowLayout {
     private var viewModel: GameViewModel
-    private var games = ["first", "second", "third"]
     let collectionLayout: UICollectionViewFlowLayout!
     let collectionView: UICollectionView!
     let itemsPerRow: CGFloat = 2
@@ -80,13 +79,13 @@ class GameView: UIView, UICollectionViewDelegateFlowLayout {
 
 extension GameView: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return games.count
+        return viewModel.games.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: GameCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: GameCollectionViewCell.reusableID, for: indexPath) as! GameCollectionViewCell
         let row = indexPath.row
-        let game = games[row]
+        let game = viewModel.games[row]
         cell.updateCell(gameName: game, gameNumber: row)
         cell.layer.cornerRadius = 8
         return cell

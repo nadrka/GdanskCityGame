@@ -55,7 +55,7 @@ class GameCollectionViewCell: UICollectionViewCell {
             make in
             make.top.equalTo(sculptureImageView.snp.bottom).inset(-15.sketchHeight)
             make.centerX.equalToSuperview()
-            make.width.equalToSuperview().multipliedBy(0.8)
+            make.width.equalToSuperview().multipliedBy(0.95)
         }
     }
 

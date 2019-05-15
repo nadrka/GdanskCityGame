@@ -16,6 +16,7 @@
 		8C7AA15D1953EF6E9F2E6C6B /* PersonDetailsRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAFDD53CEF9FD143DE306 /* PersonDetailsRegistrationView.swift */; };
 		8C7AA1635CB320BF41FC7418 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAFAD829F4301EC4B8D6D /* FriendsTableViewController.swift */; };
 		8C7AA16BE8AEC12CC5B020EC /* GroupCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA16D3E604737C79736DD /* GroupCellViewModel.swift */; };
+		8C7AA1A1513E8544FA3A67CC /* StatusAlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA681BC7BAC246448AAC8 /* StatusAlertPresenter.swift */; };
 		8C7AA1B7166FCCB43B753EC8 /* CGFloat+sketchSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA4562845F786A676522B /* CGFloat+sketchSize.swift */; };
 		8C7AA2E4BA99CA11A1CB50BD /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA18E544B97FAEB031377 /* DateFormatter.swift */; };
 		8C7AA2FFBA96926C137C4B6A /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAF5E9A69856ECD28318B /* CreateGroupView.swift */; };
@@ -43,6 +44,7 @@
 		8C7AA58767ED22E13978BCBF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAD9D218B618BBC83FD2A /* MapView.swift */; };
 		8C7AA5B91B3D4C011E83C343 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAB63E71E643D73D881AA /* GameViewController.swift */; };
 		8C7AA64F893222FD08EDD611 /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAEE27F4187229120D574 /* GameCollectionViewCell.swift */; };
+		8C7AA6633070E3880E5252CA /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA9FBA3DAD2A4DEBDB6A7 /* AlertPresenter.swift */; };
 		8C7AA66E27556E1548EE172A /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA98C8AC6FD9D3E68C0C3 /* PasswordView.swift */; };
 		8C7AA6AE12FED1AC5BF29848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7AAB28D4B3D8418B2DDBD7 /* Assets.xcassets */; };
 		8C7AA6CFCBCF0927430184CF /* OnBoardingFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AADF6A2C43DF9707AEC97 /* OnBoardingFlowController.swift */; };
@@ -106,6 +108,7 @@
 		8C7AA5E6B9DF8E2628B06B45 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8C7AA61A4A5C9B28E76F75A1 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		8C7AA66CA7DBC1CAE217C958 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8C7AA681BC7BAC246448AAC8 /* StatusAlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusAlertPresenter.swift; sourceTree = "<group>"; };
 		8C7AA68B7E72049DCD338EA7 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8C7AA6DF35D00767864027B6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8C7AA7006BF7D6C9AF002FD2 /* MonumentCalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonumentCalloutView.swift; sourceTree = "<group>"; };
@@ -121,6 +124,7 @@
 		8C7AA99721E6E933BDB0C93D /* PersonDetailsRegistrationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsRegistrationViewModel.swift; sourceTree = "<group>"; };
 		8C7AA99BC025F21067A3104E /* GroupsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewModel.swift; sourceTree = "<group>"; };
 		8C7AA9DA5562B78F8A0124BF /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		8C7AA9FBA3DAD2A4DEBDB6A7 /* AlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
 		8C7AAA635B38D463FD275124 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		8C7AAB28D4B3D8418B2DDBD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C7AAB63E71E643D73D881AA /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -390,6 +394,8 @@
 				8C7AAD582DD70EB64FBCEA4D /* InitialCircleView.swift */,
 				8C7AA1C4CDDB30167E82C012 /* InitialsCreator.swift */,
 				8C7AA72D76398A8ED180C7AA /* RoundedButton.swift */,
+				8C7AA9FBA3DAD2A4DEBDB6A7 /* AlertPresenter.swift */,
+				8C7AA681BC7BAC246448AAC8 /* StatusAlertPresenter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -609,6 +615,8 @@
 				8C7AADE98DF10697F5E2B5A6 /* MonumentAnnotationView.swift in Sources */,
 				8C7AACC4EA926D6DB8E01838 /* MonumentPin.swift in Sources */,
 				8C7AA9DF8A1934DE5176B290 /* MonumentCalloutView.swift in Sources */,
+				8C7AA6633070E3880E5252CA /* AlertPresenter.swift in Sources */,
+				8C7AA1A1513E8544FA3A67CC /* StatusAlertPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

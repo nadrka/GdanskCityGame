@@ -14,7 +14,7 @@ class MonumentCalloutView: UIView {
         label.textColor = .black
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 18)
-        label.text = "Kupa".localized
+        label.text = "".localized
         return label
     }()
 
@@ -23,7 +23,7 @@ class MonumentCalloutView: UIView {
         label.textColor = UIColor(hexString: "#555555")
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 16)
-        label.text = "Bardzo fajna kupa. Powstała w 2015 roku. asdsasa  asdasada asdasdad asdas asdasasa adasdaa asdas asdasad adasdaasa asdasdsa asdas".localized
+        label.text = "".localized
         label.numberOfLines = 6
         label.lineBreakMode = .byWordWrapping
         return label
@@ -152,5 +152,10 @@ class MonumentCalloutView: UIView {
             make.width.equalToSuperview().multipliedBy(0.4)
             make.height.equalTo(30.sketchHeight)
         }
+    }
+
+    func updateView(monument: Monument) {
+        name.text = monument.name
+        details.text = monument.description
     }
 }

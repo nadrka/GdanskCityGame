@@ -46,6 +46,10 @@ class MapView: UIView, CLLocationManagerDelegate {
         mapView.addGestureRecognizer(gestureRecognizer)
     }
 
+    @objc func didScrollMap() {
+        self.shouldTrackUserLocation = false
+    }
+
     private func setupLocationButton() {
         let image = UIImage(named: "next-location")
         locationButton = UIImageView(image: image)
@@ -74,12 +78,9 @@ class MapView: UIView, CLLocationManagerDelegate {
 
     func setupViewModel() {
         viewModel.setupMapView(mapView)
-        viewModel.fetchMonumentsForGame()
+        viewModel.startGame()
     }
 
-    @objc func didScrollMap() {
-//        self.shouldTrackUserLocation = false
-    }
 
     private func applyConstraints() {
         mapView.fillParent()
@@ -147,7 +148,12 @@ extension MapView: MKMapViewDelegate {
         }
         let monumentAnnotationView = MonumentAnnotationView(annotation: annotation, reuseIdentifier: "", monument: monumentAnnotation.monument)
         monumentAnnotationView.onTaskButtonTapped = {
-            self.viewModel.onTaskButtonTapped?()
+            if self.viewModel.isAbleToOpenTask() {
+                self.viewModel.showNextMarker()
+                self.viewModel.onTaskButtonTapped?()
+            } else {
+                self.viewModel.showTooFarFromMonumentAlert()
+            }
             print("Task button tapped")
         }
 

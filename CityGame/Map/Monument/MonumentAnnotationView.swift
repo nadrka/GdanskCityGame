@@ -3,7 +3,7 @@ import MapKit
 
 class MonumentAnnotationView: MKAnnotationView {
 
-    var monument: Monument?
+    var monument: Monument
     var onTaskButtonTapped: (()->())? = nil
     var onDetailsButtonTapped: (()->())? = nil
 
@@ -11,12 +11,12 @@ class MonumentAnnotationView: MKAnnotationView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    init(annotation: MKAnnotation?, reuseIdentifier: String, monument: Monument? = nil) {
+    init(annotation: MKAnnotation?, reuseIdentifier: String, monument: Monument) {
+        self.monument = monument
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         self.isDraggable = false
         self.isEnabled = true
         self.isHighlighted = true
-        self.monument = monument
         createAnnotationView(annotation: annotation)
     }
 
@@ -33,6 +33,7 @@ class MonumentAnnotationView: MKAnnotationView {
         monumentCalloutView.onDetailsButtonTapped = {
             self.onDetailsButtonTapped?()
         }
+        monumentCalloutView.updateView(monument: monument)
         detailCalloutAccessoryView = monumentCalloutView
         detailCalloutAccessoryView?.isUserInteractionEnabled = true
 
