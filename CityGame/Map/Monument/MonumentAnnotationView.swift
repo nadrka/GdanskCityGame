@@ -4,6 +4,8 @@ import MapKit
 class MonumentAnnotationView: MKAnnotationView {
 
     var monument: Monument?
+    var onTaskButtonTapped: (()->())? = nil
+    var onDetailsButtonTapped: (()->())? = nil
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -22,12 +24,16 @@ class MonumentAnnotationView: MKAnnotationView {
         guard let strongAnnotation = annotation as? MonumentPin else {
             return
         }
-
         canShowCallout = true
         image = UIImage(named: "monument-marker")
-        let view = MonumentDetailsView()
-        view.isUserInteractionEnabled = true
-        detailCalloutAccessoryView = view
+        let monumentCalloutView = MonumentCalloutView()
+        monumentCalloutView.onTaskButtonTapped = {
+            self.onTaskButtonTapped?()
+        }
+        monumentCalloutView.onDetailsButtonTapped = {
+            self.onDetailsButtonTapped?()
+        }
+        detailCalloutAccessoryView = monumentCalloutView
         detailCalloutAccessoryView?.isUserInteractionEnabled = true
 
     }

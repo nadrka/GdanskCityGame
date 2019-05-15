@@ -19,6 +19,23 @@ class GameFlowController: FlowController {
     private func showMapScreen() {
         let mapViewModel = MapViewModel(gameId: 1)
         let mapViewController = MapViewController(viewModel: mapViewModel)
+        mapViewModel.onTaskButtonTapped = {
+            [weak self] in
+            self?.showMonumentTaskScreen()
+        }
+
+        mapViewModel.onDetailsButtonTapped = {
+            [weak self] in
+            self?.showMonumentDetailsScreen()
+        }
         gameNavigationController?.pushViewController(mapViewController, animated: true)
+    }
+
+    private func showMonumentDetailsScreen() {
+        //todo: show monument details screen
+    }
+
+    private func showMonumentTaskScreen() {
+        //todo: show monument task screen
     }
 }

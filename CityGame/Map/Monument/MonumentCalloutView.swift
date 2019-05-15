@@ -1,7 +1,10 @@
 import UIKit
 import SnapKit
 
-class MonumentDetailsView: UIView {
+class MonumentCalloutView: UIView {
+
+    var onTaskButtonTapped: (()->())? = nil
+    var onDetailsButtonTapped: (()->())? = nil
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -94,7 +97,7 @@ class MonumentDetailsView: UIView {
     }
 
     @objc func onDetailsViewTapped() {
-        print("details section tapped")
+        onDetailsButtonTapped?()
     }
 
     private func addGestureForTaskView() {
@@ -104,7 +107,7 @@ class MonumentDetailsView: UIView {
     }
 
     @objc func onTaskViewTapped() {
-        print("task section tapped")
+        onTaskButtonTapped?()
     }
 
     private func addSubviews() {

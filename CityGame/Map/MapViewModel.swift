@@ -3,6 +3,10 @@ import MapKit
 
 class MapViewModel {
     private var mapView: MKMapView!
+
+    var onTaskButtonTapped: (()->())? = nil
+    var onDetailsButtonTapped: (()->())? = nil
+
     var monuments: [Monument] = [
         Monument(id: 1, name: "Bazylika Mariacks", description: "", location: CLLocationCoordinate2D(latitude: 54.349822, longitude: 18.653242)),
         Monument(id: 2, name: "Dwór Artusa", description: "", location: CLLocationCoordinate2D(latitude: 54.348850, longitude: 18.653394)),
@@ -24,7 +28,7 @@ class MapViewModel {
     }
 
     func fetchMonumentsForGame() {
-        //todo: load monument from firebase
+        //todo: load monuments from firebase
         createMarkerForMonuments()
     }
 

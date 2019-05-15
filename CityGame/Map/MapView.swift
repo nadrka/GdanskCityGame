@@ -10,6 +10,7 @@ class MapView: UIView, CLLocationManagerDelegate {
     private var shouldTrackUserLocation = true
     private var locationManager = CLLocationManager()
     private var regionInMeters: Double = 5000
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -33,7 +34,7 @@ class MapView: UIView, CLLocationManagerDelegate {
         mapView.delegate = self
         mapView.isRotateEnabled = false
         let locationBazylika = CLLocationCoordinate2D(latitude: 54.349822, longitude: 18.653242)
-        let region = MKCoordinateRegion(center:  locationBazylika, span: MKCoordinateSpan(latitudeDelta: 0.009, longitudeDelta: 0.009 ))
+        let region = MKCoordinateRegion(center: locationBazylika, span: MKCoordinateSpan(latitudeDelta: 0.009, longitudeDelta: 0.009))
         mapView.setRegion(region, animated: true)
         addPanGestureRecognizerForMap()
         addSubview(mapView)
@@ -54,7 +55,7 @@ class MapView: UIView, CLLocationManagerDelegate {
         mapView.addSubview(locationButton)
     }
 
-    func setupLocationManager(){
+    func setupLocationManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
@@ -64,9 +65,9 @@ class MapView: UIView, CLLocationManagerDelegate {
         zoomInLocation()
     }
 
-    func zoomInLocation(){
-        if let location = locationManager.location?.coordinate{
-            let region = MKCoordinateRegion(center: location, latitudinalMeters:regionInMeters, longitudinalMeters:regionInMeters)
+    func zoomInLocation() {
+        if let location = locationManager.location?.coordinate {
+            let region = MKCoordinateRegion(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
             mapView.setRegion(mapView.regionThatFits(region), animated: true)
         }
     }
@@ -91,8 +92,8 @@ class MapView: UIView, CLLocationManagerDelegate {
         }
     }
 
-    func checkLocationServices(){
-        if CLLocationManager.locationServicesEnabled(){
+    func checkLocationServices() {
+        if CLLocationManager.locationServicesEnabled() {
             setupLocationManager()
             checkLocationAuthorization()
         } else {
@@ -100,8 +101,8 @@ class MapView: UIView, CLLocationManagerDelegate {
         }
     }
 
-    func checkLocationAuthorization(){
-        switch CLLocationManager.authorizationStatus(){
+    func checkLocationAuthorization() {
+        switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
             mapView.showsUserLocation = true
             zoomInLocation()
@@ -121,7 +122,9 @@ class MapView: UIView, CLLocationManagerDelegate {
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last else { return }
+        guard let location = locations.last else {
+            return
+        }
         let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         let region = MKCoordinateRegion(center: center, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
         mapView.setRegion(region, animated: true)
@@ -143,6 +146,15 @@ extension MapView: MKMapViewDelegate {
             return nil
         }
         let monumentAnnotationView = MonumentAnnotationView(annotation: annotation, reuseIdentifier: "", monument: monumentAnnotation.monument)
+        monumentAnnotationView.onTaskButtonTapped = {
+            self.viewModel.onTaskButtonTapped?()
+            print("Task button tapped")
+        }
+
+        monumentAnnotationView.onDetailsButtonTapped = {
+            self.viewModel.onDetailsButtonTapped?()
+            print("Details button tapped")
+        }
         return monumentAnnotationView
     }
 
