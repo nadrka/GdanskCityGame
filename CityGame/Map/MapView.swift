@@ -9,7 +9,7 @@ class MapView: UIView, CLLocationManagerDelegate {
     private var locationButton: UIImageView!
     private var shouldTrackUserLocation = true
     private var locationManager = CLLocationManager()
-    private var regionInMeters: Double = 5000
+    private var regionInMeters: Double = 1000
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -147,9 +147,10 @@ extension MapView: MKMapViewDelegate {
             return nil
         }
         let monumentAnnotationView = MonumentAnnotationView(annotation: annotation, reuseIdentifier: "", monument: monumentAnnotation.monument)
+        monumentAnnotationView.layer.zPosition = 1
         monumentAnnotationView.onTaskButtonTapped = {
             if self.viewModel.isAbleToOpenTask() {
-                self.viewModel.showNextMarker()
+//                self.viewModel.showNextMarker()
                 self.viewModel.onTaskButtonTapped?()
             } else {
                 self.viewModel.showTooFarFromMonumentAlert()

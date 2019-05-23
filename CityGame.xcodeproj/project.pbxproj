@@ -10,6 +10,7 @@
 		49AEDC4E8A5A77692C356D30 /* Pods_CityGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF88123AC6308BDEBE14A6CA /* Pods_CityGame.framework */; };
 		7BDF6BA72252B67F005D0D54 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF6BA52252B67F005D0D54 /* Localizable.strings */; };
 		8C7AA012E4647B3CF8D211D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C7AAE690E7E6F9095EC7C68 /* GoogleService-Info.plist */; };
+		8C7AA022DBE217D509065FFD /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AABA682AF7A77C8CEA179 /* TaskViewModel.swift */; };
 		8C7AA082A523B7F0C2A6A5C1 /* MainFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AACD0662AE187DB6EE609 /* MainFlowController.swift */; };
 		8C7AA0E32A8931CB4A90CEBA /* PersonDetailsRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA99721E6E933BDB0C93D /* PersonDetailsRegistrationViewModel.swift */; };
 		8C7AA123DBC4661E3660A88A /* CreateGroupButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA414B2FE906C6EA859A5 /* CreateGroupButtonView.swift */; };
@@ -40,6 +41,7 @@
 		8C7AA4DD9ADDAB34C61A24AD /* GroupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA99BC025F21067A3104E /* GroupsViewModel.swift */; };
 		8C7AA4E59C15AC72FFFDA9FC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA04872C97BB858B66FBD /* Colors.swift */; };
 		8C7AA5050FE3588E9087BBA8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA1677E2FB18448D60A53 /* WelcomeViewController.swift */; };
+		8C7AA5202E19245F864C6132 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA7B5ABBEE416ED43FB83 /* TaskView.swift */; };
 		8C7AA525713CFDE1DB92A552 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAA635B38D463FD275124 /* GameViewModel.swift */; };
 		8C7AA58767ED22E13978BCBF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAD9D218B618BBC83FD2A /* MapView.swift */; };
 		8C7AA5B91B3D4C011E83C343 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAB63E71E643D73D881AA /* GameViewController.swift */; };
@@ -56,6 +58,7 @@
 		8C7AA9724271A58FA150BD94 /* FriendCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA1D31809A3F9602F36D4 /* FriendCellViewModel.swift */; };
 		8C7AA9DF8A1934DE5176B290 /* MonumentCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA7006BF7D6C9AF002FD2 /* MonumentCalloutView.swift */; };
 		8C7AAA538714735C26CC4723 /* InitialCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAD582DD70EB64FBCEA4D /* InitialCircleView.swift */; };
+		8C7AAA6118B84077822128AF /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA9BEB8AFD7E053C5E007 /* TaskViewController.swift */; };
 		8C7AAAF37A832647DDBFB7DC /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA91DC9207B655A871D59 /* String+Localizable.swift */; };
 		8C7AAB1BBB339F68A6CDC0E5 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AAD0E20195396BB666E81 /* Friend.swift */; };
 		8C7AAB5D89BDD4B342754D94 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7AA66CA7DBC1CAE217C958 /* NetworkManager.swift */; };
@@ -115,6 +118,7 @@
 		8C7AA72D76398A8ED180C7AA /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		8C7AA767EB58555E7CA614F3 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		8C7AA793466E9D1CEB1293EC /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		8C7AA7B5ABBEE416ED43FB83 /* TaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		8C7AA87D3AE48FC5196654EB /* UIView+Snapkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Snapkit.swift"; sourceTree = "<group>"; };
 		8C7AA8F88DDA4C5EF3A902BE /* UIView+Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
 		8C7AA91DC9207B655A871D59 /* String+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
@@ -123,12 +127,14 @@
 		8C7AA98C8AC6FD9D3E68C0C3 /* PasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
 		8C7AA99721E6E933BDB0C93D /* PersonDetailsRegistrationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsRegistrationViewModel.swift; sourceTree = "<group>"; };
 		8C7AA99BC025F21067A3104E /* GroupsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewModel.swift; sourceTree = "<group>"; };
+		8C7AA9BEB8AFD7E053C5E007 /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		8C7AA9DA5562B78F8A0124BF /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 		8C7AA9FBA3DAD2A4DEBDB6A7 /* AlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
 		8C7AAA635B38D463FD275124 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		8C7AAB28D4B3D8418B2DDBD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C7AAB63E71E643D73D881AA /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8C7AAB698AE1162BE33532D1 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		8C7AABA682AF7A77C8CEA179 /* TaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		8C7AAC0E353DA0EB9C8B54C0 /* MapFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapFlowController.swift; sourceTree = "<group>"; };
 		8C7AAC12ECC8E6369A56F06B /* WelcomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		8C7AAC65942DE810EEE993A1 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -284,6 +290,7 @@
 				8C7AAA635B38D463FD275124 /* GameViewModel.swift */,
 				8C7AAEE27F4187229120D574 /* GameCollectionViewCell.swift */,
 				8C7AAC65942DE810EEE993A1 /* Game.swift */,
+				8C7AAA6A6E45F630BCE7E239 /* Task */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -307,6 +314,16 @@
 				8C7AAC12ECC8E6369A56F06B /* WelcomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		8C7AAA6A6E45F630BCE7E239 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				8C7AABA682AF7A77C8CEA179 /* TaskViewModel.swift */,
+				8C7AA9BEB8AFD7E053C5E007 /* TaskViewController.swift */,
+				8C7AA7B5ABBEE416ED43FB83 /* TaskView.swift */,
+			);
+			path = Task;
 			sourceTree = "<group>";
 		};
 		8C7AAA81D0B586B4A7941C90 /* Login */ = {
@@ -617,6 +634,9 @@
 				8C7AA9DF8A1934DE5176B290 /* MonumentCalloutView.swift in Sources */,
 				8C7AA6633070E3880E5252CA /* AlertPresenter.swift in Sources */,
 				8C7AA1A1513E8544FA3A67CC /* StatusAlertPresenter.swift in Sources */,
+				8C7AA022DBE217D509065FFD /* TaskViewModel.swift in Sources */,
+				8C7AAA6118B84077822128AF /* TaskViewController.swift in Sources */,
+				8C7AA5202E19245F864C6132 /* TaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

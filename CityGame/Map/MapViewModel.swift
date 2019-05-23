@@ -10,10 +10,10 @@ class MapViewModel {
     var monuments: [Monument] = [
         Monument(id: 1, name: "Bazylika Mariacks", description: "Description of Bazylika Mariacka", location: CLLocationCoordinate2D(latitude: 54.349822, longitude: 18.653242)),
         Monument(id: 2, name: "Dwór Artusa", description: "Description of Dwór Artusa", location: CLLocationCoordinate2D(latitude: 54.348850, longitude: 18.653394)),
-        Monument(id: 3, name: "Fontanna Neptuna", description: "Description of Fontanna Neptuna", location: CLLocationCoordinate2D(latitude: 54.348628, longitude: 18.653216)),
-        Monument(id: 4, name: "Żuraw", description: "Description of Żuraw", location: CLLocationCoordinate2D(latitude: 54.350605, longitude: 18.657509)),
-        Monument(id: 5, name: "Złota Brama", description: "Description of Złota Brama", location: CLLocationCoordinate2D(latitude: 54.349760, longitude: 18.648074)),
-        Monument(id: 6, name: "Akademia Sztuk Pięknych", description: "Description of Akademia Sztuk Pięknych", location: CLLocationCoordinate2D(latitude: 54.350799, longitude: 18.649083))
+        Monument(id: 3, name: "Fontanna Neptuna", description: "Description of Fontanna Neptuna", location: CLLocationCoordinate2D(latitude: 54.348628, longitude: 18.653216))
+//        Monument(id: 4, name: "Żuraw", description: "Description of Żuraw", location: CLLocationCoordinate2D(latitude: 54.350605, longitude: 18.657509)),
+//        Monument(id: 5, name: "Złota Brama", description: "Description of Złota Brama", location: CLLocationCoordinate2D(latitude: 54.349760, longitude: 18.648074)),
+//        Monument(id: 6, name: "Akademia Sztuk Pięknych", description: "Description of Akademia Sztuk Pięknych", location: CLLocationCoordinate2D(latitude: 54.350799, longitude: 18.649083))
     ]
 
     var markerToGo: Int = 0
@@ -45,12 +45,12 @@ class MapViewModel {
 
     func isIn20MetersRange(from myCoordinates: CLLocationCoordinate2D, to monumentCoordinates: CLLocationCoordinate2D) -> Bool {
         let myLocation = CLLocation(latitude: myCoordinates.latitude, longitude: myCoordinates.longitude)
-
         let monumentLocation = CLLocation(latitude: monumentCoordinates.latitude, longitude: monumentCoordinates.longitude)
 
         let distance = myLocation.distance(from: monumentLocation)
+        let maxDistanceFromMonument: Double = 20
         print("Distance from marker: " + String(distance))
-        return distance <= 20
+        return distance <= maxDistanceFromMonument
     }
 
     func showNextMarker() {

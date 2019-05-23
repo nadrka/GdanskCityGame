@@ -14,6 +14,8 @@ class WelcomeViewController: UIViewController {
         setupView()
     }
 
+
+
     private func setupView() {
         mainView = WelcomeView(viewModel: viewModel)
         view.addSubview(mainView)

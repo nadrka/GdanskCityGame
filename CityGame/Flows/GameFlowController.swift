@@ -24,7 +24,7 @@ class GameFlowController: FlowController {
         mapViewModel.alertPresenter = alertPresenter
         mapViewModel.onTaskButtonTapped = {
             [weak self] in
-            self?.showMonumentTaskScreen()
+            self?.showMonumentTaskScreen(mapViewModel: mapViewModel)
         }
 
         mapViewModel.onDetailsButtonTapped = {
@@ -42,7 +42,13 @@ class GameFlowController: FlowController {
         //todo: show monument details screen
     }
 
-    private func showMonumentTaskScreen() {
-        //todo: show monument task screen
+    private func showMonumentTaskScreen(mapViewModel: MapViewModel) {
+        let taskViewModel = TaskViewModel()
+        taskViewModel.onTaskCompleted = {
+            self.gameNavigationController?.popViewController(animated: true)
+            mapViewModel.showNextMarker()
+        }
+        let taskViewController = TaskViewController(viewModel: taskViewModel)
+        gameNavigationController?.pushViewController(taskViewController, animated: true)
     }
 }
