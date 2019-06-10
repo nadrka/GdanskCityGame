@@ -16,7 +16,35 @@ class RegisterViewModel {
         let doesPasswordMatch = input.password == input.repeatedPassword && input.password.count > 6
         let isEmailValid = isValidEmail(input.email)
         let isNameValid = input.name.count > 3
-
+        
+        //============= POST Request =====================
+        let url = URL(string: "http://citygame.hostingasp.pl/api/User")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        let json: [String: Any] = ["UserName": "ABC",
+                                   "Email": "abc@aa.pl",
+                                   "PasswordHash": "rrr"]
+        
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = jsonData
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                return
+            }
+            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+            if let responseJSON = responseJSON as? [String: Any] {
+                print(responseJSON)
+            }
+        }
+        
+        task.resume()
+        
+        //==================================================
+        
         if !isEmailValid {
             onError(errorMessage: "Invalid email.")
         }
